@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import './theme.scss';
+
+/** Navbar **/
+.name-logo {
+    font-family: 'Inconsolata', monospace;
+    color: #F06292;
+    font-size:large;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+/** Hero **/
+@media (min-width: 769px) {
+    .hero-container {
+        margin: 15px;
+    
+        .hero-row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+    
+        .hero-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+        .name-heading {
+            font-family: 'Inconsolata', monospace;
+            color: #F06292;
+            font-size: 5rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {   
+        .hero-row {
+            flex-direction: column;
+        }
+        .hero-column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+        .name-heading {
+            font-family: 'Inconsolata', monospace;
+            color: #F06292;
+            font-size: 4.5rem;
+        }
+}
