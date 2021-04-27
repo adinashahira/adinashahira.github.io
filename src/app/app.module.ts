@@ -14,12 +14,15 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HeroComponent } from './hero/hero.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { HeroComponent } from './hero/hero.component';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
