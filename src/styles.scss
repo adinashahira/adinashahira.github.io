@@ -6,6 +6,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import './theme.scss';
 
+a {
+  color: #F06292;
+}
+
 /** Navbar **/
 .name-logo {
     font-family: 'Inconsolata', monospace;
@@ -181,4 +185,27 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   grid-gap: 2rem;
   margin: 1rem;
   padding-top: 20px;
+}
+
+/** Contact **/
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7fafd;
+  padding: 4rem;
+  align-items: center;
+
+  .contact-social {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/** Footer **/
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDE7F6;
+  height: 70px;
 }
