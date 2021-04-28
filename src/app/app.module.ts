@@ -18,6 +18,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -27,6 +29,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     CarouselComponent,
     AboutMeComponent,
     PortfolioComponent,
+    ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
