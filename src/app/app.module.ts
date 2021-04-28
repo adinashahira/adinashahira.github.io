@@ -16,6 +16,7 @@ import { MatListModule } from '@angular/material/list';
 import { HeroComponent } from './hero/hero.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { CarouselComponent } from './carousel/carousel.component';
     AppComponent,
     HeroComponent,
     CarouselComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,

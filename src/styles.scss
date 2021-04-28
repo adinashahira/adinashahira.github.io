@@ -17,6 +17,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     flex: 1 1 auto;
 }
 
+.sticky-nav {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 /** Hero **/
 @media (min-width: 769px) {
     .hero-container {
@@ -109,3 +116,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+/** About Me **/
+.about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
