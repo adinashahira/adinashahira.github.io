@@ -17,6 +17,7 @@ import { HeroComponent } from './hero/hero.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselComponent } from './carousel/carousel.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
     HeroComponent,
     CarouselComponent,
     AboutMeComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,

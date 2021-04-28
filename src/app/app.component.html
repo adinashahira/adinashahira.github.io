@@ -11,14 +11,14 @@
         </div>
 
         <div fxShow="true" fxHide.gt-sm="true">
-            <a href="#" (click)="smallnav.toggle()"><mat-icon>apps</mat-icon></a>
+            <a href="#" (click)="smallnav.toggle()"><mat-icon color="warn">apps</mat-icon></a>
         </div>
     </mat-toolbar>
 
     <mat-sidenav-container fxFlexFill>
         <mat-sidenav #smallnav fxLayout="column" mode="side" opened="false">
             <div fxLayout="column">
-                <a (click)="smallnav.toggle()" href="#" matbutton><mat-icon>close</mat-icon></a>
+                <a (click)="smallnav.toggle()" href="#" matbutton><mat-icon color="warn">close</mat-icon></a>
                 <a mat-button href="#">About</a>
                 <a mat-button href="#">Portfolio</a>
                 <a mat-button href="#">Contact</a>
@@ -30,6 +30,7 @@
         <mat-sidenav-content>
             <app-hero></app-hero>
             <app-about-me></app-about-me>
+            <app-portfolio></app-portfolio>
         </mat-sidenav-content>
     </mat-sidenav-container>
 </div>
