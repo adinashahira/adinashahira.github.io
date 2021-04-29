@@ -1,17 +1,13 @@
-<div style="height: calc(100vh - 60px);">
+<div style="height: 100%;">
     <mat-toolbar color="primary" class="sticky-nav">
         <span class="name-logo">adina s.</span>
         <span class="example-spacer"></span>
-        <div fxShow="true" fxHide.lt-md="true">
+        <div fxShow="true" fxHide.lt-sm="true">
             <a mat-button href="#aboutme" routerLinkActive="activebutton">About</a>
             <a mat-button href="#portfolio" routerLinkActive="activebutton">Portfolio</a>
             <a mat-button href="#contact" routerLinkActive="activebutton">Contact</a>
             <a mat-button href="https://www.linkedin.com/in/nuradinashahira/" target="_blank"><fa-icon [icon]="faLinkedinIn"></fa-icon></a>
             <a mat-button href="https://github.com/adinashahira" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a>
-        </div>
-
-        <div fxShow="true" fxHide.gt-sm="true">
-            <a href="#" (click)="smallnav.toggle()"><mat-icon color="warn">apps</mat-icon></a>
         </div>
     </mat-toolbar>
 
