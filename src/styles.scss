@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+html, body { height: 100%; min-height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
@@ -26,6 +26,10 @@ a {
     position: -webkit-sticky;
     top: 0;
     z-index: 1000;
+}
+
+.sidenav-fixed {
+  position: fixed;
 }
 
 /** Hero **/
@@ -181,10 +185,10 @@ a {
 /** Portfolio **/
 .portfolio-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   grid-gap: 2rem;
   margin: 1rem;
-  padding-top: 20px;
+  justify-content: center;
 }
 
 /** Contact **/
@@ -194,6 +198,7 @@ a {
   background-color: #f7fafd;
   padding: 4rem;
   align-items: center;
+  justify-items: center;
 
   .contact-social {
     flex-direction: row;
