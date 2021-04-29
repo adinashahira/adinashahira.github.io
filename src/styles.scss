@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; min-height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; padding-top: 65px;}
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import './theme.scss';
@@ -22,14 +22,10 @@ a {
 }
 
 .sticky-nav {
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    position: -webkit-fixed;
     top: 0;
     z-index: 1000;
-}
-
-.sidenav-fixed {
-  position: fixed;
 }
 
 /** Hero **/
