@@ -1,0 +1,22 @@
+<mat-toolbar color="primary" class="sticky-nav">
+    <span class="name-logo">adina s.</span>
+    <span class="example-spacer"></span>
+    <div fxShow="true" fxHide.lt-sm="true">
+        <a mat-button href="#aboutme" routerLinkActive="activebutton">About</a>
+        <a mat-button href="#portfolio" routerLinkActive="activebutton">Portfolio</a>
+        <a mat-button href="#contact" routerLinkActive="activebutton">Contact</a>
+        <a mat-button href="https://www.linkedin.com/in/nuradinashahira/" target="_blank"><fa-icon [icon]="faLinkedinIn"></fa-icon></a>
+        <a mat-button href="https://github.com/adinashahira" target="_blank"><fa-icon [icon]="faGithub"></fa-icon></a>
+    </div>
+</mat-toolbar>
+<div id="aboutme">
+    <app-hero></app-hero>
+    <app-about-me></app-about-me>
+</div>
+<div id="portfolio">
+    <app-portfolio></app-portfolio>
+</div>
+<div id="contact">
+    <app-contact></app-contact>
+</div>
+<app-footer></app-footer>
